@@ -1,0 +1,44 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="{% static 'blog/style.css' %}">
+  <title>Erasmus World</title>
+  <meta charset="UTF-8">
+</head>
+
+<body>
+<ul>
+  <li><a class="active" href="http://127.0.0.1:8000">Home</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Places</a>
+    <div class="dropdown-content">
+      <a href="#">Favourites</a>
+      <a href="http://127.0.0.1:8000/blog/">All</a>
+      <a href="#">Need to go</a>
+	  <a href="#">Find</a>
+	  
+    </div>
+  </li>
+  <a href="http://127.0.0.1:8000/blog/post/new">Post a place</a>
+  <li><a href="#news">News</a></li>
+  <li style="float:right"><a href="http://127.0.0.1:8000/admin/">Log In</a></li>
+
+</ul>
+<section>
+  <article>
+    <ul> 
+      {% block content %}
+      {% endblock %}
+    </ul> 
+  </article>
+</section>
+
+<footer>
+  <li><a href="#contact">Contact</a></li>
+		<li><a href="{% url 'polls:detail' 2 %}">Que te parece nuestra página?</a></li>
+</footer>
+</body>
+
+</html>

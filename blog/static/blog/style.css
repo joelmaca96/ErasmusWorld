@@ -1,0 +1,140 @@
+/****************************
+*Barra de seleccion superior*
+*****************************/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+	
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.active{
+	 background-color: #4CAF50;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #111;
+}
+
+li.dropdown {
+    display: inline-block;
+	
+}
+
+.dropdown-content {
+    display: none;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+	position: absolute;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+/***************************
+*       Pie de página      *
+****************************/
+footer {
+    background-color: #777;
+	padding: 1px;
+    text-align: center;
+    color: white;
+	text-decoration: none;
+}
+
+footer li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+section {
+    display: -webkit-flex;
+    display: flex;
+}
+
+/***************************
+*          Centro          *
+****************************/
+article {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    padding: 10px;
+}
+article ul {
+    list-style-type: none;
+    margin: 0 px;
+    padding-left: 5px;
+	padding-right: 5px;
+    overflow: hidden;
+    background-color: #333;
+}
+p.Title {
+	font-family: Lobster;
+	color:white;
+	font-size:35px;
+}
+
+p.Resumen {
+	color: white;
+	font-size: 15px;
+}
+
+p.Fecha {
+	font-size: 12px;
+	color: white;
+}
+
+a.Title {
+	font-family: Lobster;
+	color:white;
+	font-size:35px;
+}
+
+/***************************
+*      Fondo y genericos   *
+****************************/
+body{ 
+background-image: url("images/background.gif");
+background-repeat:no-repeat; 
+background-position: center center;
+background-attachment:fixed;
+-o-background-size: 100% 100%, auto;
+-moz-background-size: 100% 100%, auto;
+-webkit-background-size: 100% 100%, auto;
+background-size: 100% 100%, auto;
+font-family:Verdana,sans-serif;
+} 
+
+
+
